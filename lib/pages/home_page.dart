@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: Center(
                 child: Text(
-                  'welcome'.tr(),
+                  'flutter'.tr(),
                   style: const TextStyle(fontSize: 20),
                 ),
               ),
@@ -50,10 +50,10 @@ class _HomePageState extends State<HomePage> {
                     height: 45,
                     color: Colors.green,
                     onPressed: () {
-                      context.locale = Locale('ru', "RU");
+                      context.locale = Locale('ko', "KO");
                     },
                     child: const Text(
-                      "Russian",
+                      "Korean",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
@@ -66,25 +66,10 @@ class _HomePageState extends State<HomePage> {
                     height: 45,
                     color: Colors.blue,
                     onPressed: () {
-                      context.locale = Locale('uz', "UZ");
+                      context.locale = Locale('ja', "JA");
                     },
                     child: const Text(
-                      "Uzbek",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),const SizedBox(width: 5),
-
-                // #uz
-                Expanded(
-                  child: FlatButton(
-                    height: 45,
-                    color: Colors.blue,
-                    onPressed: () {
-                      context.locale = Locale('Fri', "Fri");
-                    },
-                    child: const Text(
-                      "French",
+                      "Japanese",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
